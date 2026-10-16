@@ -1,0 +1,2453 @@
+<!doctype html>
+<html lang="en" data-theme="dark">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>
+      Tarek Mohamed — Senior Motion Graphic Designer & Lead Video Editor
+    </title>
+    <meta
+      name="description"
+      content="Senior Motion Graphic Designer & Lead Video Editor with +7 years experience across broadcast media and commercial advertising. Founder at Thaqib Production, editing for MBC Group & Al Arabiya."
+    />
+
+    <!-- Fonts: Cairo & Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700;800;900&family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="/css/style.css" />
+
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+  </head>
+  <body>
+    <!-- Initial Preloader Screen -->
+    <div id="preloader" class="preloader">
+      <div class="preloader-content">
+        <div class="preloader-badge-ring">
+          <img
+            src="/assets/TAREK.png"
+            alt="Tarek Mohamed"
+            class="brand-badgee"
+          />
+          <div class="preloader-spinner"></div>
+        </div>
+
+        <div class="preloader-name-wrap">
+          <h1 class="preloader-name">
+            TAREK <span class="preloader-hl">MOHAMED</span>
+          </h1>
+          <!-- <p class="preloader-title">
+            Creative Director <br />
+            MOTION DESIGNER &bull; VIDEO EDITOR
+          </p> -->
+          <p class="preloader-title">
+            <span style="font-size: 1.5em">Creative Director</span> <br />
+            MOTION DESIGNER &bull; VIDEO EDITOR
+          </p>
+        </div>
+
+        <div class="preloader-bar-wrap">
+          <div class="preloader-bar">
+            <div id="preloader-fill" class="preloader-fill"></div>
+          </div>
+          <div class="preloader-meta">
+            <span id="preloader-status" class="preloader-status"
+              >INITIALIZING...</span
+            >
+            <span id="preloader-count" class="preloader-count">0%</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Scroll Progress Bar -->
+    <div id="scroll-progress" class="scroll-progress"></div>
+
+    <!-- Background Orbs -->
+    <div class="orbs">
+      <div class="orb orb-1"></div>
+      <div class="orb orb-2"></div>
+      <div class="orb orb-3"></div>
+    </div>
+
+    <!-- Navbar -->
+    <nav class="navbar">
+      <div class="container nav-content">
+        <a href="#hero" class="nav-brand">
+          <img
+            src="/assets/TAREK.png"
+            alt="Tarek Mohamed"
+            class="brand-badge"
+          />
+          <div class="brand-info">
+            <span class="brand-name">Tarek Mohamed</span>
+            <span class="brand-tag" data-i18n="brand_tag">Motion & Video</span>
+          </div>
+        </a>
+
+        <ul class="nav-links">
+          <li><a href="#about" data-i18n="nav_about">About</a></li>
+          <li><a href="#experience" data-i18n="nav_exp">Experience</a></li>
+          <li><a href="#projects" data-i18n="nav_projects">Projects</a></li>
+          <li><a href="#skills" data-i18n="nav_skills">Skills & Tools</a></li>
+          <li>
+            <a href="#recommendations" data-i18n="nav_reviews">Reviews</a>
+          </li>
+          <li><a href="#contact" data-i18n="nav_contact">Contact</a></li>
+        </ul>
+
+        <div class="nav-actions">
+          <!-- Language Switcher -->
+          <button
+            id="lang-toggle"
+            class="btn btn-ghost"
+            title="تغيير اللغة / Switch Language"
+            aria-label="Toggle Language"
+          >
+            <i data-lucide="languages" style="width: 15px; height: 15px"></i>
+            <span id="lang-text" style="font-size: 13px; font-weight: 700"
+              >العربية</span
+            >
+          </button>
+
+          <button
+            id="theme-toggle"
+            class="btn btn-ghost"
+            title="Toggle Theme"
+            aria-label="Toggle Theme"
+          >
+            <i data-lucide="sun" style="width: 16px; height: 16px"></i>
+          </button>
+
+          <a
+            href="/cv"
+            target="_blank"
+            class="btn btn-ghost"
+            title="View Curriculum Vitae"
+          >
+            <i data-lucide="file-text" style="width: 15px; height: 15px"></i>
+            <span data-i18n="nav_cv">CV</span>
+          </a>
+
+          <a
+            href="https://wa.me/message/4QAUA7J5QBQII1"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="btn btn-whatsapp"
+          >
+            <i
+              data-lucide="message-circle"
+              style="width: 16px; height: 16px"
+            ></i>
+            <span data-i18n="nav_wa">WhatsApp</span>
+          </a>
+
+          <a href="#contact" class="btn btn-accent">
+            <i data-lucide="mail" style="width: 15px; height: 15px"></i>
+            <span data-i18n="nav_hire">Hire Me</span>
+          </a>
+
+          <button id="hamburger" class="hamburger" aria-label="Open menu">
+            <i data-lucide="menu" style="width: 20px; height: 20px"></i>
+          </button>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Mobile Drawer Navigation -->
+    <div id="mobile-nav" class="mobile-nav">
+      <a href="#about" data-i18n="nav_about">About</a>
+      <a href="#experience" data-i18n="nav_exp">Experience</a>
+      <a href="#projects" data-i18n="nav_projects">Projects</a>
+      <a href="#skills" data-i18n="nav_skills">Skills & Tools</a>
+      <a href="#recommendations" data-i18n="nav_reviews">Reviews</a>
+      <a href="#contact" data-i18n="nav_contact">Contact</a>
+      <a
+        href="/cv"
+        target="_blank"
+        style="color: var(--accent)"
+        data-i18n="mobile_cv"
+        >View Curriculum Vitae (CV)</a
+      >
+      <a
+        href="https://wa.me/message/4QAUA7J5QBQII1"
+        target="_blank"
+        style="color: #25d366"
+        data-i18n="mobile_wa"
+        >Chat on WhatsApp</a
+      >
+      <button
+        id="mobile-lang-toggle"
+        class="btn btn-outline"
+        style="
+          justify-content: center;
+          padding: 10px;
+          font-size: 14px;
+          margin-top: 8px;
+        "
+      >
+        <i data-lucide="languages" style="width: 16px; height: 16px"></i>
+        <span id="mobile-lang-text">التحويل إلى العربية</span>
+      </button>
+    </div>
+
+    <!-- Hero Section -->
+    <section id="hero">
+      <div class="container">
+        <div class="hero-grid">
+          <div class="hero-content reveal-left">
+            <div class="avail-pill">
+              <span class="avail-dot"></span>
+              <span data-i18n="avail_pill"
+                >Available for Broadcast & Commercial Projects</span
+              >
+            </div>
+
+            <h1 class="hero-title">
+              <span data-i18n="hero_title_1">Crafting Visuals That</span><br />
+              <span class="hero-hl" data-i18n="hero_title_2"
+                >Command Attention.</span
+              >
+            </h1>
+
+            <p class="hero-desc" data-i18n="hero_desc">
+              <strong
+                >Senior Motion Graphic Designer & Lead Video Editor</strong
+              >
+              with over <strong>7 years</strong> of broadcast industry
+              experience. Currently shaping visual narratives for
+              <strong>MBC Group & Al Arabiya News Channel</strong> and Founder
+              at <strong>Thaqib Production</strong>.
+            </p>
+
+            <div class="hero-badges-row">
+              <div class="network-badge mbc">
+                <i data-lucide="tv" style="width: 14px; height: 14px"></i>
+                <span data-i18n="badge_mbc">MBC Group</span>
+              </div>
+              <div class="network-badge alarabiya">
+                <i data-lucide="radio" style="width: 14px; height: 14px"></i>
+                <span data-i18n="badge_alarabiya">Al Arabiya News Channel</span>
+              </div>
+              <div class="network-badge thaqib">
+                <i data-lucide="sparkles" style="width: 14px; height: 14px"></i>
+                <span data-i18n="badge_thaqib">Thaqib Production</span>
+              </div>
+            </div>
+
+            <div class="hero-actions">
+              <a href="#contact" class="btn btn-accent">
+                <i data-lucide="send" style="width: 16px; height: 16px"></i>
+                <span data-i18n="btn_contact">Get In Touch</span>
+              </a>
+              <a href="#projects" class="btn btn-outline">
+                <i
+                  data-lucide="play-circle"
+                  style="width: 16px; height: 16px"
+                ></i>
+                <span data-i18n="btn_portfolio">View Projects</span>
+              </a>
+              <a href="/cv" target="_blank" class="btn btn-ghost">
+                <i
+                  data-lucide="file-text"
+                  style="width: 16px; height: 16px"
+                ></i>
+                <span data-i18n="btn_cv">View / Download CV</span>
+              </a>
+            </div>
+
+            <div class="hero-stats">
+              <div class="stat-item">
+                <div class="stat-num" data-i18n="stat_exp_num">
+                  +7<span> Years</span>
+                </div>
+                <div class="stat-label" data-i18n="stat_exp_lbl">
+                  Industry Experience
+                </div>
+              </div>
+              <div class="stat-item">
+                <div class="stat-num" data-i18n="stat_net_num">
+                  MBC<span> & Al Arabiya</span>
+                </div>
+                <div class="stat-label" data-i18n="stat_net_lbl">
+                  Featured Networks
+                </div>
+              </div>
+              <div class="stat-item">
+                <div class="stat-num" data-i18n="stat_agency_num">
+                  Thaqib<span> Production</span>
+                </div>
+                <div class="stat-label" data-i18n="stat_agency_lbl">
+                  Established Agency
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Photo Card Wrap -->
+          <div class="photo-card-wrap reveal-right delay-2">
+            <div class="photo-frame">
+              <img
+                src="/assets/TAREK.png"
+                alt="Tarek Mohamed — Senior Motion Graphic Designer & Video Editor"
+              />
+              <div class="photo-overlay-badge">
+                <div>
+                  <div class="photo-overlay-name">Tarek Mohamed</div>
+                  <div class="photo-overlay-role" data-i18n="photo_role">
+                    Senior Motion Designer
+                  </div>
+                </div>
+                <div
+                  style="
+                    color: #10b981;
+                    display: flex;
+                    align-items: center;
+                    gap: 6px;
+                    font-size: 11px;
+                    font-weight: 700;
+                  "
+                >
+                  <span
+                    class="avail-dot"
+                    style="width: 6px; height: 6px"
+                  ></span>
+                  <span data-i18n="photo_avail">Available</span>
+                </div>
+              </div>
+            </div>
+            <div class="photo-card-footer">
+              <div class="photo-card-loc">
+                <i
+                  data-lucide="map-pin"
+                  style="width: 13px; height: 13px; color: var(--accent)"
+                ></i>
+                <span data-i18n="photo_loc">Cairo, Egypt</span>
+              </div>
+              <div
+                style="font-size: 12px; font-weight: 700; color: #fbbf24"
+                data-i18n="photo_networks"
+              >
+                ★ MBC & Al Arabiya
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Video Editor Timeline Mockup -->
+        <div class="hero-timeline-wrap reveal-scale delay-3">
+          <div class="timeline-mockup">
+            <div class="mockup-body">
+              <!-- Track 1: FX / Motion -->
+              <div class="timeline-track">
+                <div class="track-bar track-fx">
+                  <span data-i18n="mockup_v3"
+                    >Channel Idents & Kinetic Typography</span
+                  >
+                </div>
+              </div>
+
+              <!-- Track 2: Infographics -->
+              <div class="timeline-track">
+                <div class="track-bar track-motion">
+                  <span data-i18n="mockup_v2"
+                    >Al Arabiya News Data Viz & Infographics</span
+                  >
+                </div>
+              </div>
+
+              <!-- Track 3: Video -->
+              <div class="timeline-track">
+                <div class="track-bar track-video">
+                  <span data-i18n="mockup_v1"
+                    >4K Commercial Campaign / Broadcast Cut</span
+                  >
+                </div>
+              </div>
+
+              <!-- Track 4: Audio -->
+              <div class="timeline-track">
+                <div class="track-bar track-audio">
+                  <span data-i18n="mockup_a1"
+                    >Sound Design & Audio Cleaning (-14 LUFS)</span
+                  >
+                  <div class="waveform">
+                    <span class="wave-bar"></span>
+                    <span class="wave-bar"></span>
+                    <span class="wave-bar"></span>
+                    <span class="wave-bar"></span>
+                    <span class="wave-bar"></span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about">
+      <div class="container">
+        <div class="section-badge reveal">
+          <i data-lucide="user-check" style="width: 14px; height: 14px"></i>
+          <span data-i18n="about_badge">About Me</span>
+        </div>
+        <h2 class="section-title reveal delay-1" data-i18n="about_title">
+          Who I Am
+        </h2>
+        <p class="section-subtitle reveal delay-2" data-i18n="about_subtitle">
+          A blend of broadcast-grade storytelling, high-end motion graphics, and
+          creative agency leadership.
+        </p>
+
+        <div class="about-grid">
+          <div class="about-card reveal-left delay-1">
+            <p class="about-text" data-i18n="about_p1">
+              Founder of <strong>Thaqib for Media Production</strong>, Senior
+              Motion Graphic Designer, and Video Editor with over
+              <strong>7 years of industry experience</strong> across broadcast
+              media and commercial advertising.
+            </p>
+            <p class="about-text" data-i18n="about_p2">
+              Currently editing and designing visual assets for
+              <strong>MBC Group</strong> and
+              <strong>Al Arabiya News Channel</strong>. Combining dynamic
+              broadcast storytelling with advanced motion graphics and creative
+              leadership, I deliver high-impact visual experiences and scalable
+              advertising solutions for global networks and top-tier brands.
+            </p>
+
+            <div class="social-row">
+              <a
+                href="https://www.linkedin.com/in/tarek-mohamed-91b111102/"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="soc-btn"
+              >
+                <i data-lucide="linkedin" style="width: 15px; height: 15px"></i>
+                LinkedIn
+              </a>
+              <a
+                href="https://mostaql.com/u/Tarek_El_Masry/portfolio"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="soc-btn"
+              >
+                <i
+                  data-lucide="briefcase"
+                  style="width: 15px; height: 15px"
+                ></i>
+                Mostaql Portfolio
+              </a>
+              <a
+                href="https://wa.me/message/4QAUA7J5QBQII1"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="soc-btn"
+              >
+                <i
+                  data-lucide="phone-call"
+                  style="width: 15px; height: 15px"
+                ></i>
+                WhatsApp
+              </a>
+              <a
+                href="https://www.facebook.com/tarek.mohamed.229574"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="soc-btn"
+              >
+                <i data-lucide="facebook" style="width: 15px; height: 15px"></i>
+                Facebook
+              </a>
+            </div>
+          </div>
+
+          <div class="about-card reveal-right delay-2">
+            <h3
+              style="font-size: 18px; margin-bottom: 16px"
+              data-i18n="profile_title"
+            >
+              Quick Profile
+            </h3>
+            <div class="facts-grid">
+              <div class="fact-box">
+                <div class="fact-key" data-i18n="fact_role_lbl">Role</div>
+                <div class="fact-val" data-i18n="fact_role_val">
+                  Senior Motion Designer & Lead Editor
+                </div>
+              </div>
+              <div class="fact-box">
+                <div class="fact-key" data-i18n="fact_net_lbl">Networks</div>
+                <div class="fact-val">MBC Group & Al Arabiya</div>
+              </div>
+              <div class="fact-box">
+                <div class="fact-key" data-i18n="fact_agency_lbl">Agency</div>
+                <div class="fact-val">Thaqib Media Production</div>
+              </div>
+              <div class="fact-box">
+                <div class="fact-key" data-i18n="fact_loc_lbl">Location</div>
+                <div class="fact-val" data-i18n="fact_loc_val">
+                  Cairo, Egypt
+                </div>
+              </div>
+              <div class="fact-box">
+                <div class="fact-key" data-i18n="fact_phone_lbl">Phone</div>
+                <div class="fact-val">01070022976</div>
+              </div>
+              <div class="fact-box">
+                <div class="fact-key" data-i18n="fact_status_lbl">Status</div>
+                <div
+                  class="fact-val"
+                  style="color: #10b981"
+                  data-i18n="fact_status_val"
+                >
+                  Available Immediately
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience">
+      <div class="container">
+        <div class="section-badge reveal">
+          <i data-lucide="briefcase" style="width: 14px; height: 14px"></i>
+          <span data-i18n="exp_badge">Work History</span>
+        </div>
+        <h2 class="section-title reveal delay-1" data-i18n="exp_title">
+          Professional Experience
+        </h2>
+        <p class="section-subtitle reveal delay-2" data-i18n="exp_subtitle">
+          Over 7 years delivering mission-critical broadcast news packages,
+          channel identities, and commercial campaigns.
+        </p>
+
+        <div class="exp-list">
+          <!-- Card 1: Thaqib -->
+          <div class="exp-card reveal delay-1">
+            <div class="exp-header">
+              <div>
+                <div class="exp-role" data-i18n="exp1_role">
+                  Founder & Managing Director
+                </div>
+                <div class="exp-company">
+                  <i data-lucide="award" style="width: 16px; height: 16px"></i>
+                  <span data-i18n="exp1_co">Thaqib for Media Production</span>
+                </div>
+              </div>
+              <div class="exp-period" data-i18n="exp1_period">
+                2026 – Present
+              </div>
+            </div>
+
+            <ul class="exp-bullets">
+              <li data-i18n="exp1_b1">
+                Lead full-scale production workflows and creative direction for
+                commercial campaigns and digital media assets.
+              </li>
+              <li data-i18n="exp1_b2">
+                Oversee visual identity creation, promotional 2D motion
+                graphics, and high-conversion commercial production for diverse
+                clients.
+              </li>
+              <li data-i18n="exp1_b3">
+                Manage client relationships, strategic campaign planning, and
+                project delivery from concept to final broadcast delivery.
+              </li>
+            </ul>
+
+            <div class="tags-row">
+              <span class="tag">Creative Direction</span>
+              <span class="tag">Agency Operations</span>
+              <span class="tag">Commercial Production</span>
+              <span class="tag">Visual Identity</span>
+              <span class="tag">2D Motion Graphics</span>
+              <span class="tag">Client Strategy</span>
+            </div>
+          </div>
+
+          <!-- Card 2: MBC & Al Arabiya -->
+          <div class="exp-card reveal delay-2">
+            <div class="exp-header">
+              <div>
+                <div class="exp-role" data-i18n="exp2_role">
+                  Senior Motion Graphic Designer & Broadcast Video Editor
+                </div>
+                <div class="exp-company">
+                  <i data-lucide="tv" style="width: 16px; height: 16px"></i>
+                  <span data-i18n="exp2_co"
+                    >Al Arabiya News Channel & MBC Group</span
+                  >
+                </div>
+              </div>
+              <div class="exp-period" data-i18n="exp2_period">
+                2021 – Present
+              </div>
+            </div>
+
+            <ul class="exp-bullets">
+              <li data-i18n="exp2_b1">
+                Edit high-stakes television reports, specialized programs, and
+                breaking news packages under tight deadlines, adhering to
+                international broadcast standards.
+              </li>
+              <li data-i18n="exp2_b2">
+                Design and animate broadcast motion graphics packages, channel
+                idents, and news infographics to simplify complex statistics and
+                enhance visual storytelling.
+              </li>
+              <li data-i18n="exp2_b3">
+                Ensure seamless editorial flow, dynamic visual pacing,
+                broadcast-quality audio mixing, and color grading.
+              </li>
+            </ul>
+
+            <div class="tags-row">
+              <span class="tag">Adobe After Effects</span>
+              <span class="tag">Adobe Premiere Pro</span>
+              <span class="tag">Broadcast Packaging</span>
+              <span class="tag">Channel Idents</span>
+              <span class="tag">News Infographics</span>
+              <span class="tag">Color Grading</span>
+              <span class="tag">Breaking News Workflow</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects & Featured Works Section -->
+    <section id="projects">
+      <div class="container">
+        <div class="section-badge reveal">
+          <i data-lucide="film" style="width: 14px; height: 14px"></i>
+          <span data-i18n="proj_badge">Featured Works</span>
+        </div>
+        <h2 class="section-title reveal delay-1" data-i18n="proj_title">
+          Selected Motion & Video Projects
+        </h2>
+        <p class="section-subtitle reveal delay-2" data-i18n="proj_subtitle">
+          Commercial 2D motion graphics, brand explainers, and healthcare visual
+          campaigns produced with broadcast precision.
+        </p>
+
+        <div class="projects-grid">
+          <!-- Card 1: Mohandsek App -->
+          <div class="project-card reveal delay-1">
+            <div class="project-media">
+              <div class="project-poster-wrap" data-video-id="GHkJ6f5DwxI">
+                <img
+                  src="https://img.youtube.com/vi/GHkJ6f5DwxI/maxresdefault.jpg"
+                  alt="Mohandsek App Motion Graphics"
+                  class="project-poster"
+                  loading="lazy"
+                  onerror="
+                    this.src =
+                      'https://ms.hsoubcdn.com/uploads/thumbnails/937962/6213161d5e8d2/Screenshot-174.png'
+                  "
+                />
+                <div class="project-overlay-gradient"></div>
+                <button class="project-play-btn" aria-label="Play video">
+                  <i
+                    data-lucide="play"
+                    style="width: 26px; height: 26px; fill: currentColor"
+                  ></i>
+                </button>
+                <div class="project-media-badge">Full HD • 1080p</div>
+              </div>
+            </div>
+
+            <div class="project-content">
+              <div class="project-top-row">
+                <span class="project-cat" data-i18n="proj1_cat"
+                  >Commercial Ad & App</span
+                >
+                <span class="project-year">Full HD 1080p</span>
+              </div>
+
+              <h3 class="project-title" data-i18n="proj1_title">
+                موشن جرافيك | لصالح تطبيق مهندسك
+              </h3>
+
+              <div class="project-client">
+                <i data-lucide="building-2"></i>
+                <span data-i18n="proj1_client">Client: Mohandsek App</span>
+              </div>
+
+              <p class="project-desc" data-i18n="proj1_desc">
+                Commercial motion graphics video explaining the Mohandsek
+                engineering platform with custom vector character design,
+                kinetic typography, and broadcast-ready sound mixing.
+              </p>
+
+              <!-- Process Tags -->
+              <div class="project-steps">
+                <span class="step-pill"
+                  ><i data-lucide="check" style="width: 12px; height: 12px"></i>
+                  <span data-i18n="proj1_step1">Scriptwriting</span></span
+                >
+                <span class="step-pill"
+                  ><i data-lucide="check" style="width: 12px; height: 12px"></i>
+                  <span data-i18n="proj1_step2">Voiceover</span></span
+                >
+                <span class="step-pill"
+                  ><i data-lucide="check" style="width: 12px; height: 12px"></i>
+                  <span data-i18n="proj1_step3">Storyboard</span></span
+                >
+                <span class="step-pill"
+                  ><i data-lucide="check" style="width: 12px; height: 12px"></i>
+                  <span data-i18n="proj1_step4">Vector Art</span></span
+                >
+                <span class="step-pill"
+                  ><i data-lucide="check" style="width: 12px; height: 12px"></i>
+                  <span data-i18n="proj1_step5">2D Animation</span></span
+                >
+                <span class="step-pill"
+                  ><i data-lucide="check" style="width: 12px; height: 12px"></i>
+                  <span data-i18n="proj1_step6">Sound Design</span></span
+                >
+              </div>
+
+              <!-- Software Tags -->
+              <div class="project-tools">
+                <span class="project-tool-tag">After Effects</span>
+                <span class="project-tool-tag">Illustrator</span>
+                <span class="project-tool-tag">Sound FX & Mix</span>
+                <span class="project-tool-tag">Full HD Export</span>
+              </div>
+
+              <!-- Action Buttons -->
+              <div class="project-footer">
+                <button
+                  class="btn btn-accent proj-play-action"
+                  data-video-id="GHkJ6f5DwxI"
+                >
+                  <i
+                    data-lucide="play"
+                    style="width: 14px; height: 14px; fill: currentColor"
+                  ></i>
+                  <span data-i18n="proj_play">Watch Video</span>
+                </button>
+                <a
+                  href="https://mostaql.com/portfolio/888951-%D9%85%D9%88%D8%B4%D9%86-%D8%AC%D8%B1%D8%A7%D9%81%D9%8A%D9%83-%D9%84%D8%B5%D8%A7%D9%84%D8%AD-%D8%AA%D8%B7%D8%A8%D9%8A%D9%82-%D9%85%D9%87%D9%86%D8%AF%D8%B3%D9%83"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="btn btn-outline"
+                >
+                  <i
+                    data-lucide="external-link"
+                    style="width: 14px; height: 14px"
+                  ></i>
+                  <span data-i18n="proj_view_mostaql">Mostaql</span>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 2: Diabetic Dental Care / Qassim Health Cluster -->
+          <div class="project-card reveal delay-2">
+            <div class="project-media">
+              <div class="project-poster-wrap" data-video-id="k84TR8mAo2w">
+                <img
+                  src="https://img.youtube.com/vi/k84TR8mAo2w/maxresdefault.jpg"
+                  alt="Dental Care for Diabetic Patients Motion Graphics"
+                  class="project-poster"
+                  loading="lazy"
+                  onerror="
+                    this.src =
+                      'https://ms.hsoubcdn.com/uploads/thumbnails/937962/6213110e45f5f/Screenshot-168.png'
+                  "
+                />
+                <div class="project-overlay-gradient"></div>
+                <button class="project-play-btn" aria-label="Play video">
+                  <i
+                    data-lucide="play"
+                    style="width: 26px; height: 26px; fill: currentColor"
+                  ></i>
+                </button>
+                <div class="project-media-badge">Full HD • 1080p</div>
+              </div>
+            </div>
+
+            <div class="project-content">
+              <div class="project-top-row">
+                <span class="project-cat" data-i18n="proj2_cat"
+                  >Healthcare Awareness</span
+                >
+                <span class="project-year">Full HD 1080p</span>
+              </div>
+
+              <h3 class="project-title" data-i18n="proj2_title">
+                موشن جرافيك | العناية بالفم والأسنان لمريض السكري
+              </h3>
+
+              <div class="project-client">
+                <i data-lucide="shield-plus"></i>
+                <span data-i18n="proj2_client"
+                  >Client: Qassim Health Cluster</span
+                >
+              </div>
+
+              <p class="project-desc" data-i18n="proj2_desc">
+                Medical awareness video guiding diabetic patients on oral and
+                dental healthcare through friendly visual metaphors, simplified
+                infographics, and educational kinetic motion.
+              </p>
+
+              <!-- Process Tags -->
+              <div class="project-steps">
+                <span class="step-pill"
+                  ><i data-lucide="check" style="width: 12px; height: 12px"></i>
+                  <span data-i18n="proj2_step1">Medical Script</span></span
+                >
+                <span class="step-pill"
+                  ><i data-lucide="check" style="width: 12px; height: 12px"></i>
+                  <span data-i18n="proj2_step2">Professional VO</span></span
+                >
+                <span class="step-pill"
+                  ><i data-lucide="check" style="width: 12px; height: 12px"></i>
+                  <span data-i18n="proj2_step3"
+                    >Character Storyboard</span
+                  ></span
+                >
+                <span class="step-pill"
+                  ><i data-lucide="check" style="width: 12px; height: 12px"></i>
+                  <span data-i18n="proj2_step4">Custom Illustration</span></span
+                >
+                <span class="step-pill"
+                  ><i data-lucide="check" style="width: 12px; height: 12px"></i>
+                  <span data-i18n="proj2_step5">Motion Graphics</span></span
+                >
+                <span class="step-pill"
+                  ><i data-lucide="check" style="width: 12px; height: 12px"></i>
+                  <span data-i18n="proj2_step6">SFX & Audio Master</span></span
+                >
+              </div>
+
+              <!-- Software Tags -->
+              <div class="project-tools">
+                <span class="project-tool-tag">After Effects</span>
+                <span class="project-tool-tag">Illustrator</span>
+                <span class="project-tool-tag">Infographics</span>
+                <span class="project-tool-tag">Audio Mastering</span>
+              </div>
+
+              <!-- Action Buttons -->
+              <div class="project-footer">
+                <button
+                  class="btn btn-accent proj-play-action"
+                  data-video-id="k84TR8mAo2w"
+                >
+                  <i
+                    data-lucide="play"
+                    style="width: 14px; height: 14px; fill: currentColor"
+                  ></i>
+                  <span data-i18n="proj_play">Watch Video</span>
+                </button>
+                <a
+                  href="https://mostaql.com/portfolio/888943-%D9%85%D9%88%D8%B4%D9%86-%D8%AC%D8%B1%D8%A7%D9%81%D9%8A%D9%83-%D9%84%D9%84%D8%B9%D9%86%D8%A7%D9%8A%D8%A9-%D8%A8%D8%A7%D9%84%D9%81%D9%85-%D9%88%D8%A7%D9%84%D8%A7%D8%B3%D9%86%D8%A7%D9%86-%D9%84%D9%85%D8%B1%D9%8A%D8%B6-%D8%A7%D9%84%D8%B3%D9%83%D8%B1%D9%8A-%D9%84%D8%B5%D8%A7%D9%84%D8%AD-%D8%A7%D9%84%D8%AA%D8%AC%D9%85%D8%B9-%D8%A7%D9%84%D8%B5%D8%AD%D9%8A-%D8%A8%D8%A7%D9%84%D9%82%D8%B5%D9%8A%D9%85"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="btn btn-outline"
+                >
+                  <i
+                    data-lucide="external-link"
+                    style="width: 14px; height: 14px"
+                  ></i>
+                  <span data-i18n="proj_view_mostaql">Mostaql</span>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 3: Boking Lab App -->
+          <div class="project-card reveal delay-3">
+            <div class="project-media">
+              <div class="project-poster-wrap" data-video-id="v5AKYgRvSYM">
+                <img
+                  src="https://img.youtube.com/vi/v5AKYgRvSYM/maxresdefault.jpg"
+                  alt="Boking Lab Medical Laboratories App Motion Graphics"
+                  class="project-poster"
+                  loading="lazy"
+                  onerror="
+                    this.src =
+                      'https://ms.hsoubcdn.com/uploads/thumbnails/937962/61c920b31ae84/Screenshot-92.png'
+                  "
+                />
+                <div class="project-overlay-gradient"></div>
+                <button class="project-play-btn" aria-label="Play video">
+                  <i
+                    data-lucide="play"
+                    style="width: 26px; height: 26px; fill: currentColor"
+                  ></i>
+                </button>
+                <div class="project-media-badge">Full HD • 1080p</div>
+              </div>
+            </div>
+
+            <div class="project-content">
+              <div class="project-top-row">
+                <span class="project-cat" data-i18n="proj3_cat"
+                  >Medical Tech & App</span
+                >
+                <span class="project-year">Full HD 1080p</span>
+              </div>
+
+              <h3 class="project-title" data-i18n="proj3_title">
+                موشن جرافيك | تطبيق Boking Lab للتحاليل الطبية
+              </h3>
+
+              <div class="project-client">
+                <i data-lucide="smartphone"></i>
+                <span data-i18n="proj3_client">Client: Boking Lab</span>
+              </div>
+
+              <p class="project-desc" data-i18n="proj3_desc">
+                Tech product explainer introducing the Boking Lab medical
+                testing app, showcasing features, lab appointments, and digital
+                workflows with slick UI animation and vibrant motion.
+              </p>
+
+              <!-- Process Tags -->
+              <div class="project-steps">
+                <span class="step-pill"
+                  ><i data-lucide="check" style="width: 12px; height: 12px"></i>
+                  <span data-i18n="proj3_step1">Script & Flow</span></span
+                >
+                <span class="step-pill"
+                  ><i data-lucide="check" style="width: 12px; height: 12px"></i>
+                  <span data-i18n="proj3_step2">Voice Recording</span></span
+                >
+                <span class="step-pill"
+                  ><i data-lucide="check" style="width: 12px; height: 12px"></i>
+                  <span data-i18n="proj3_step3">Scene Layouts</span></span
+                >
+                <span class="step-pill"
+                  ><i data-lucide="check" style="width: 12px; height: 12px"></i>
+                  <span data-i18n="proj3_step4">UI Vector Graphics</span></span
+                >
+                <span class="step-pill"
+                  ><i data-lucide="check" style="width: 12px; height: 12px"></i>
+                  <span data-i18n="proj3_step5">Kinetic Animation</span></span
+                >
+                <span class="step-pill"
+                  ><i data-lucide="check" style="width: 12px; height: 12px"></i>
+                  <span data-i18n="proj3_step6">Audio & Mix</span></span
+                >
+              </div>
+
+              <!-- Software Tags -->
+              <div class="project-tools">
+                <span class="project-tool-tag">After Effects</span>
+                <span class="project-tool-tag">Illustrator</span>
+                <span class="project-tool-tag">UI Animation</span>
+                <span class="project-tool-tag">Sound Effects</span>
+              </div>
+
+              <!-- Action Buttons -->
+              <div class="project-footer">
+                <button
+                  class="btn btn-accent proj-play-action"
+                  data-video-id="v5AKYgRvSYM"
+                >
+                  <i
+                    data-lucide="play"
+                    style="width: 14px; height: 14px; fill: currentColor"
+                  ></i>
+                  <span data-i18n="proj_play">Watch Video</span>
+                </button>
+                <a
+                  href="https://mostaql.com/portfolio/847800-%D9%85%D9%88%D8%B4%D9%86-%D8%AC%D8%B1%D8%A7%D9%81%D9%8A%D9%83-%D9%84%D8%AA%D8%B7%D8%A8%D9%8A%D9%82-%D8%A7%D9%84%D9%83%D8%AA%D8%B1%D9%88%D9%86%D9%8A-boking-lab-%D8%AE%D8%A7%D8%B5-%D8%A8%D9%85%D8%B9%D8%A7%D9%85%D9%84-%D8%A7%D9%84%D8%AA%D8%AD%D8%A7%D9%84%D9%8A%D9%84-%D8%A7%D9%84%D8%B7%D8%A8%D9%8A%D8%A9"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="btn btn-outline"
+                >
+                  <i
+                    data-lucide="external-link"
+                    style="width: 14px; height: 14px"
+                  ></i>
+                  <span data-i18n="proj_view_mostaql">Mostaql</span>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 4: UGC Commercial Video -->
+          <div class="project-card reveal delay-1">
+            <div class="project-media">
+              <div class="project-poster-wrap" data-video-id="lBXZEqXFlCU">
+                <img
+                  src="https://img.youtube.com/vi/lBXZEqXFlCU/maxresdefault.jpg"
+                  alt="فيديو إعلاني UGC"
+                  class="project-poster"
+                  loading="lazy"
+                  onerror="
+                    this.src =
+                      'https://img.youtube.com/vi/lBXZEqXFlCU/hqdefault.jpg'
+                  "
+                />
+                <div class="project-overlay-gradient"></div>
+                <button class="project-play-btn" aria-label="Play video">
+                  <i
+                    data-lucide="play"
+                    style="width: 26px; height: 26px; fill: currentColor"
+                  ></i>
+                </button>
+                <div class="project-media-badge">Full HD • 1080p</div>
+              </div>
+            </div>
+
+            <div class="project-content">
+              <div class="project-top-row">
+                <span class="project-cat" data-i18n="proj4_cat"
+                  >UGC & Commercial Ads</span
+                >
+                <span class="project-year">Full HD 1080p</span>
+              </div>
+
+              <h3 class="project-title" data-i18n="proj4_title">
+                فيديو إعلاني UGC
+              </h3>
+
+              <div class="project-client">
+                <i data-lucide="sparkles"></i>
+                <span data-i18n="proj4_client"
+                  >Type: UGC Commercial Video Ad</span
+                >
+              </div>
+
+              <p class="project-desc" data-i18n="proj4_desc">
+                Dynamic UGC-style commercial advertising video tailored for
+                digital marketing and e-commerce campaigns, combining authentic
+                pacing, attention-grabbing hooks, kinetic subtitles, and
+                high-conversion editorial cuts.
+              </p>
+
+              <!-- Process Tags -->
+              <div class="project-steps">
+                <span class="step-pill"
+                  ><i data-lucide="check" style="width: 12px; height: 12px"></i>
+                  <span data-i18n="proj4_step1">Creative Hook</span></span
+                >
+                <span class="step-pill"
+                  ><i data-lucide="check" style="width: 12px; height: 12px"></i>
+                  <span data-i18n="proj4_step2">Dynamic Cut</span></span
+                >
+                <span class="step-pill"
+                  ><i data-lucide="check" style="width: 12px; height: 12px"></i>
+                  <span data-i18n="proj4_step3">Kinetic Captions</span></span
+                >
+                <span class="step-pill"
+                  ><i data-lucide="check" style="width: 12px; height: 12px"></i>
+                  <span data-i18n="proj4_step4">Sound Design</span></span
+                >
+                <span class="step-pill"
+                  ><i data-lucide="check" style="width: 12px; height: 12px"></i>
+                  <span data-i18n="proj4_step5">Color Grading</span></span
+                >
+              </div>
+
+              <!-- Software Tags -->
+              <div class="project-tools">
+                <span class="project-tool-tag">Premiere Pro</span>
+                <span class="project-tool-tag">After Effects</span>
+                <span class="project-tool-tag">UGC Marketing</span>
+                <span class="project-tool-tag">Sound Effects</span>
+              </div>
+
+              <!-- Action Buttons -->
+              <div class="project-footer">
+                <button
+                  class="btn btn-accent proj-play-action"
+                  data-video-id="lBXZEqXFlCU"
+                >
+                  <i
+                    data-lucide="play"
+                    style="width: 14px; height: 14px; fill: currentColor"
+                  ></i>
+                  <span data-i18n="proj_play">Watch Video</span>
+                </button>
+                <a
+                  href="https://www.youtube.com/watch?v=lBXZEqXFlCU"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="btn btn-outline"
+                >
+                  <i
+                    data-lucide="youtube"
+                    style="width: 14px; height: 14px; color: #ff0000"
+                  ></i>
+                  <span data-i18n="proj_view_yt">YouTube</span>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 5: Medical Video Editing -->
+          <div class="project-card reveal delay-2">
+            <div class="project-media">
+              <div class="project-poster-wrap" data-video-id="iCxVORcEWAo">
+                <img
+                  src="https://img.youtube.com/vi/iCxVORcEWAo/maxresdefault.jpg"
+                  alt="مونتاج طبي | لمناقشة خرافة طبية وتصحيحها بأسلوب مبسط"
+                  class="project-poster"
+                  loading="lazy"
+                  onerror="
+                    this.src =
+                      'https://img.youtube.com/vi/iCxVORcEWAo/hqdefault.jpg'
+                  "
+                />
+                <div class="project-overlay-gradient"></div>
+                <button class="project-play-btn" aria-label="Play video">
+                  <i
+                    data-lucide="play"
+                    style="width: 26px; height: 26px; fill: currentColor"
+                  ></i>
+                </button>
+                <div class="project-media-badge">Full HD • 1080p</div>
+              </div>
+            </div>
+
+            <div class="project-content">
+              <div class="project-top-row">
+                <span class="project-cat" data-i18n="proj5_cat"
+                  >Medical & Health Editing</span
+                >
+                <span class="project-year">Full HD 1080p</span>
+              </div>
+
+              <h3 class="project-title" data-i18n="proj5_title">
+                مونتاج طبي | لمناقشة خرافة طبية وتصحيحها بأسلوب مبسط
+              </h3>
+
+              <div class="project-client">
+                <i data-lucide="activity"></i>
+                <span data-i18n="proj5_client"
+                  >Type: Medical Explainer & Myth Buster</span
+                >
+              </div>
+
+              <p class="project-desc" data-i18n="proj5_desc">
+                Engaging medical and healthcare video debunking common health
+                myths through simplified visual storytelling, explanatory
+                graphical overlays, precise pacing, and clean audio mastering.
+              </p>
+
+              <!-- Process Tags -->
+              <div class="project-steps">
+                <span class="step-pill"
+                  ><i data-lucide="check" style="width: 12px; height: 12px"></i>
+                  <span data-i18n="proj5_step1"
+                    >Medical Storytelling</span
+                  ></span
+                >
+                <span class="step-pill"
+                  ><i data-lucide="check" style="width: 12px; height: 12px"></i>
+                  <span data-i18n="proj5_step2">Visual Explainers</span></span
+                >
+                <span class="step-pill"
+                  ><i data-lucide="check" style="width: 12px; height: 12px"></i>
+                  <span data-i18n="proj5_step3">Pacing & Continuity</span></span
+                >
+                <span class="step-pill"
+                  ><i data-lucide="check" style="width: 12px; height: 12px"></i>
+                  <span data-i18n="proj5_step4">Audio Clean & Mix</span></span
+                >
+                <span class="step-pill"
+                  ><i data-lucide="check" style="width: 12px; height: 12px"></i>
+                  <span data-i18n="proj5_step5">Color Treatment</span></span
+                >
+              </div>
+
+              <!-- Software Tags -->
+              <div class="project-tools">
+                <span class="project-tool-tag">Premiere Pro</span>
+                <span class="project-tool-tag">After Effects</span>
+                <span class="project-tool-tag">Audition</span>
+                <span class="project-tool-tag">Color Grading</span>
+              </div>
+
+              <!-- Action Buttons -->
+              <div class="project-footer">
+                <button
+                  class="btn btn-accent proj-play-action"
+                  data-video-id="iCxVORcEWAo"
+                >
+                  <i
+                    data-lucide="play"
+                    style="width: 14px; height: 14px; fill: currentColor"
+                  ></i>
+                  <span data-i18n="proj_play">Watch Video</span>
+                </button>
+                <a
+                  href="https://www.youtube.com/watch?v=iCxVORcEWAo"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="btn btn-outline"
+                >
+                  <i
+                    data-lucide="youtube"
+                    style="width: 14px; height: 14px; color: #ff0000"
+                  ></i>
+                  <span data-i18n="proj_view_yt">YouTube</span>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 6: Pediatric Medical Video Editing -->
+          <div class="project-card reveal delay-3">
+            <div class="project-media">
+              <div class="project-poster-wrap" data-video-id="7d0B3jp6OJU">
+                <img
+                  src="https://img.youtube.com/vi/7d0B3jp6OJU/maxresdefault.jpg"
+                  alt="مونتاج طبي احترافي | حقيقة إدمان جلسات البخار عند الأطفال وصعوبة التنفس"
+                  class="project-poster"
+                  loading="lazy"
+                  onerror="
+                    this.src =
+                      'https://img.youtube.com/vi/7d0B3jp6OJU/hqdefault.jpg'
+                  "
+                />
+                <div class="project-overlay-gradient"></div>
+                <button class="project-play-btn" aria-label="Play video">
+                  <i
+                    data-lucide="play"
+                    style="width: 26px; height: 26px; fill: currentColor"
+                  ></i>
+                </button>
+                <div class="project-media-badge">Full HD • 1080p</div>
+              </div>
+            </div>
+
+            <div class="project-content">
+              <div class="project-top-row">
+                <span class="project-cat" data-i18n="proj6_cat"
+                  >Medical & Pediatric Healthcare</span
+                >
+                <span class="project-year">Full HD 1080p</span>
+              </div>
+
+              <h3 class="project-title" data-i18n="proj6_title">
+                مونتاج طبي احترافي | حقيقة إدمان جلسات البخار عند الأطفال
+              </h3>
+
+              <div class="project-client">
+                <i data-lucide="heart-pulse"></i>
+                <span data-i18n="proj6_client"
+                  >Type: Pediatric Health Awareness</span
+                >
+              </div>
+
+              <p class="project-desc" data-i18n="proj6_desc">
+                Professional healthcare video edit explaining pediatric
+                nebulizer & steam therapy myths, combining medical B-roll
+                cutaways, clarifying lower-thirds typography, dynamic visual
+                rhythm, and clean vocal EQ.
+              </p>
+
+              <!-- Process Tags -->
+              <div class="project-steps">
+                <span class="step-pill"
+                  ><i data-lucide="check" style="width: 12px; height: 12px"></i>
+                  <span data-i18n="proj6_step1"
+                    >Medical Simplification</span
+                  ></span
+                >
+                <span class="step-pill"
+                  ><i data-lucide="check" style="width: 12px; height: 12px"></i>
+                  <span data-i18n="proj6_step2">B-Roll Cutaways</span></span
+                >
+                <span class="step-pill"
+                  ><i data-lucide="check" style="width: 12px; height: 12px"></i>
+                  <span data-i18n="proj6_step3">Lower-Thirds</span></span
+                >
+                <span class="step-pill"
+                  ><i data-lucide="check" style="width: 12px; height: 12px"></i>
+                  <span data-i18n="proj6_step4">Audio EQ & Clean</span></span
+                >
+                <span class="step-pill"
+                  ><i data-lucide="check" style="width: 12px; height: 12px"></i>
+                  <span data-i18n="proj6_step5">Warm Color Grade</span></span
+                >
+              </div>
+
+              <!-- Software Tags -->
+              <div class="project-tools">
+                <span class="project-tool-tag">Premiere Pro</span>
+                <span class="project-tool-tag">After Effects</span>
+                <span class="project-tool-tag">B-Roll Story</span>
+                <span class="project-tool-tag">Audio Mastering</span>
+              </div>
+
+              <!-- Action Buttons -->
+              <div class="project-footer">
+                <button
+                  class="btn btn-accent proj-play-action"
+                  data-video-id="7d0B3jp6OJU"
+                >
+                  <i
+                    data-lucide="play"
+                    style="width: 14px; height: 14px; fill: currentColor"
+                  ></i>
+                  <span data-i18n="proj_play">Watch Video</span>
+                </button>
+                <a
+                  href="https://www.youtube.com/watch?v=7d0B3jp6OJU"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="btn btn-outline"
+                >
+                  <i
+                    data-lucide="youtube"
+                    style="width: 14px; height: 14px; color: #ff0000"
+                  ></i>
+                  <span data-i18n="proj_view_yt">YouTube</span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- CTA Banner to view all projects -->
+        <div class="projects-cta-banner reveal delay-2">
+          <div class="projects-cta-info">
+            <div class="projects-cta-badge">
+              <i data-lucide="layers" style="width: 16px; height: 16px"></i>
+              <span>+50 Commercial & Broadcast Projects</span>
+            </div>
+            <h3 class="projects-cta-title" data-i18n="proj_cta_title">
+              Looking for more motion graphics & video projects?
+            </h3>
+            <p class="projects-cta-desc" data-i18n="proj_cta_desc">
+              Explore over 50+ commercial advertisements, broadcast idents, and
+              creative reels on Mostaql.
+            </p>
+          </div>
+          <a
+            href="https://mostaql.com/u/Tarek_El_Masry/portfolio"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="btn btn-accent projects-cta-btn"
+          >
+            <i
+              data-lucide="external-link"
+              style="width: 16px; height: 16px"
+            ></i>
+            <span data-i18n="proj_cta_btn">View All Projects on Mostaql</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills & Tools Section -->
+    <section id="skills">
+      <div class="container">
+        <div class="section-badge reveal">
+          <i data-lucide="sliders" style="width: 14px; height: 14px"></i>
+          <span data-i18n="skills_badge">Proficiencies</span>
+        </div>
+        <h2 class="section-title reveal delay-1" data-i18n="skills_title">
+          Technical Skills & Software
+        </h2>
+        <p class="section-subtitle reveal delay-2" data-i18n="skills_subtitle">
+          Industry-standard toolset and creative domains refined over 7+ years
+          of broadcast production.
+        </p>
+
+        <div class="skills-grid">
+          <!-- Category 1: Software & Tools -->
+          <div class="skill-category-card reveal-scale delay-1">
+            <div class="cat-header">
+              <div class="cat-icon-box">
+                <i data-lucide="cpu" style="width: 20px; height: 20px"></i>
+              </div>
+              <div class="cat-title" data-i18n="cat1_title">
+                Software & Tools
+              </div>
+            </div>
+
+            <div class="skill-items">
+              <div class="skill-pill-item">
+                <span>Adobe After Effects</span>
+                <span class="level">Senior Level</span>
+              </div>
+              <div class="skill-pill-item">
+                <span>Adobe Premiere Pro</span>
+                <span class="level">Expert / Mastery</span>
+              </div>
+              <div class="skill-pill-item">
+                <span>Adobe Photoshop</span>
+                <span class="level">Advanced</span>
+              </div>
+              <div class="skill-pill-item">
+                <span>Adobe Illustrator</span>
+                <span class="level">Advanced</span>
+              </div>
+              <div class="skill-pill-item">
+                <span>DaVinci Resolve</span>
+                <span class="level">Color Grading</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Category 2: Motion Design -->
+          <div class="skill-category-card reveal-scale delay-2">
+            <div class="cat-header">
+              <div class="cat-icon-box">
+                <i
+                  data-lucide="play-square"
+                  style="width: 20px; height: 20px"
+                ></i>
+              </div>
+              <div class="cat-title" data-i18n="cat2_title">Motion Design</div>
+            </div>
+
+            <div class="skill-items">
+              <div class="skill-pill-item">
+                <span>Broadcast Packaging</span>
+                <span class="level">Core</span>
+              </div>
+              <div class="skill-pill-item">
+                <span>Channel Idents & Promos</span>
+                <span class="level">Core</span>
+              </div>
+              <div class="skill-pill-item">
+                <span>News & Data Infographics</span>
+                <span class="level">Broadcast</span>
+              </div>
+              <div class="skill-pill-item">
+                <span>Commercial 2D Animation</span>
+                <span class="level">Commercial</span>
+              </div>
+              <div class="skill-pill-item">
+                <span>Kinetic Typography</span>
+                <span class="level">High Pacing</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Category 3: Editing & Production -->
+          <div class="skill-category-card reveal-scale delay-3">
+            <div class="cat-header">
+              <div class="cat-icon-box">
+                <i data-lucide="film" style="width: 20px; height: 20px"></i>
+              </div>
+              <div class="cat-title" data-i18n="cat3_title">
+                Editing & Production
+              </div>
+            </div>
+
+            <div class="skill-items">
+              <div class="skill-pill-item">
+                <span>Fast-Turnaround Newsroom</span>
+                <span class="level">Breaking News</span>
+              </div>
+              <div class="skill-pill-item">
+                <span>Documentary Storytelling</span>
+                <span class="level">Narrative</span>
+              </div>
+              <div class="skill-pill-item">
+                <span>Audio Cleaning & Mixing</span>
+                <span class="level">Mastering</span>
+              </div>
+              <div class="skill-pill-item">
+                <span>Color Correction & Grading</span>
+                <span class="level">Rec.709</span>
+              </div>
+              <div class="skill-pill-item">
+                <span>Video Post-Processing</span>
+                <span class="level">4K / UHD</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Category 4: Leadership -->
+          <div class="skill-category-card reveal-scale delay-4">
+            <div class="cat-header">
+              <div class="cat-icon-box">
+                <i
+                  data-lucide="shield-check"
+                  style="width: 20px; height: 20px"
+                ></i>
+              </div>
+              <div class="cat-title" data-i18n="cat4_title">
+                Leadership & Management
+              </div>
+            </div>
+
+            <div class="skill-items">
+              <div class="skill-pill-item">
+                <span>Creative Direction</span>
+                <span class="level">Executive</span>
+              </div>
+              <div class="skill-pill-item">
+                <span>Visual Supervision</span>
+                <span class="level">Lead</span>
+              </div>
+              <div class="skill-pill-item">
+                <span>Production Management</span>
+                <span class="level">Agile</span>
+              </div>
+              <div class="skill-pill-item">
+                <span>Client Relations</span>
+                <span class="level">Strategic</span>
+              </div>
+              <div class="skill-pill-item">
+                <span>Strategic Media Planning</span>
+                <span class="level">Campaigns</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Recommendations / Reviews Section -->
+    <section id="recommendations">
+      <div class="container">
+        <div class="section-badge reveal">
+          <i
+            data-lucide="star"
+            style="width: 14px; height: 14px; fill: #fbbf24; stroke: #fbbf24"
+          ></i>
+          <span data-i18n="rev_badge">Client Feedback</span>
+        </div>
+        <h2 class="section-title reveal delay-1" data-i18n="rev_title">
+          What Clients Say
+        </h2>
+        <p class="section-subtitle reveal delay-2" data-i18n="rev_subtitle">
+          Verified reviews and endorsements from regional brands, commercial
+          clients, and agency founders on Mostaql.
+        </p>
+
+        <!-- Overall Ratings Banner -->
+        <div class="rec-stats-banner reveal-scale delay-1">
+          <div class="rec-stat-group">
+            <div class="rec-big-rating">4.9</div>
+            <div>
+              <div class="rec-stars">
+                <i
+                  data-lucide="star"
+                  style="
+                    width: 16px;
+                    height: 16px;
+                    fill: #fbbf24;
+                    stroke: #fbbf24;
+                  "
+                ></i>
+                <i
+                  data-lucide="star"
+                  style="
+                    width: 16px;
+                    height: 16px;
+                    fill: #fbbf24;
+                    stroke: #fbbf24;
+                  "
+                ></i>
+                <i
+                  data-lucide="star"
+                  style="
+                    width: 16px;
+                    height: 16px;
+                    fill: #fbbf24;
+                    stroke: #fbbf24;
+                  "
+                ></i>
+                <i
+                  data-lucide="star"
+                  style="
+                    width: 16px;
+                    height: 16px;
+                    fill: #fbbf24;
+                    stroke: #fbbf24;
+                  "
+                ></i>
+                <i
+                  data-lucide="star"
+                  style="
+                    width: 16px;
+                    height: 16px;
+                    fill: #fbbf24;
+                    stroke: #fbbf24;
+                  "
+                ></i>
+              </div>
+              <div
+                style="
+                  font-size: 13px;
+                  color: var(--text-muted);
+                  font-weight: 600;
+                "
+                data-i18n="rev_stat_lbl"
+              >
+                Overall Client Rating
+              </div>
+            </div>
+          </div>
+
+          <div class="rec-factors-row">
+            <div class="rec-factor">
+              <span class="rec-factor-label" data-i18n="rev_f_comm"
+                >Communication</span
+              >
+              <span class="rec-factor-val">5.0 / 5.0</span>
+            </div>
+            <div class="rec-factor">
+              <span class="rec-factor-label" data-i18n="rev_f_qual"
+                >Work Quality</span
+              >
+              <span class="rec-factor-val">4.9 / 5.0</span>
+            </div>
+            <div class="rec-factor">
+              <span class="rec-factor-label" data-i18n="rev_f_prof"
+                >Professionalism</span
+              >
+              <span class="rec-factor-val">4.8 / 5.0</span>
+            </div>
+            <div class="rec-factor">
+              <span class="rec-factor-label" data-i18n="rev_f_rehire"
+                >Re-hire Rate</span
+              >
+              <span
+                class="rec-factor-val"
+                style="color: #10b981"
+                data-i18n="rev_f_rehire_val"
+                >100% Satisfied</span
+              >
+            </div>
+          </div>
+
+          <a
+            href="https://mostaql.com/u/Tarek_El_Masry/reviews"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="btn btn-outline"
+            style="padding: 8px 14px; font-size: 13px"
+          >
+            <i
+              data-lucide="external-link"
+              style="width: 14px; height: 14px"
+            ></i>
+            <span data-i18n="rev_btn">View on Mostaql</span>
+          </a>
+        </div>
+
+        <!-- Reviews Grid -->
+        <div class="rec-grid">
+          <!-- Review 1: Salman A. -->
+          <div class="rec-card reveal-scale delay-1">
+            <div>
+              <div class="rec-card-header">
+                <div class="rec-stars-sm">
+                  <i
+                    data-lucide="star"
+                    style="
+                      width: 14px;
+                      height: 14px;
+                      fill: #fbbf24;
+                      stroke: #fbbf24;
+                    "
+                  ></i>
+                  <i
+                    data-lucide="star"
+                    style="
+                      width: 14px;
+                      height: 14px;
+                      fill: #fbbf24;
+                      stroke: #fbbf24;
+                    "
+                  ></i>
+                  <i
+                    data-lucide="star"
+                    style="
+                      width: 14px;
+                      height: 14px;
+                      fill: #fbbf24;
+                      stroke: #fbbf24;
+                    "
+                  ></i>
+                  <i
+                    data-lucide="star"
+                    style="
+                      width: 14px;
+                      height: 14px;
+                      fill: #fbbf24;
+                      stroke: #fbbf24;
+                    "
+                  ></i>
+                  <i
+                    data-lucide="star"
+                    style="
+                      width: 14px;
+                      height: 14px;
+                      fill: #fbbf24;
+                      stroke: #fbbf24;
+                    "
+                  ></i>
+                </div>
+                <span class="rec-scope-pill">Commercial Project</span>
+              </div>
+
+              <p class="rec-body-text">
+                "مفهوم الإبداع عنده مختلف.. العمل بمتعة وشغف الأنجاز بإحتراف..
+                باختصار: هو الخارج عن الصندوق في مستقل."
+              </p>
+            </div>
+
+            <div class="rec-author-row">
+              <div class="rec-avatar">S</div>
+              <div>
+                <div class="rec-author-name">Salman A. (سلمان أ.)</div>
+                <div class="rec-verified-badge">
+                  <i
+                    data-lucide="check-circle-2"
+                    style="width: 12px; height: 12px; color: #10b981"
+                  ></i>
+                  Verified Client &bull; Mostaql
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Review 2: Hussam E. -->
+          <div class="rec-card reveal-scale delay-2">
+            <div>
+              <div class="rec-card-header">
+                <div class="rec-stars-sm">
+                  <i
+                    data-lucide="star"
+                    style="
+                      width: 14px;
+                      height: 14px;
+                      fill: #fbbf24;
+                      stroke: #fbbf24;
+                    "
+                  ></i>
+                  <i
+                    data-lucide="star"
+                    style="
+                      width: 14px;
+                      height: 14px;
+                      fill: #fbbf24;
+                      stroke: #fbbf24;
+                    "
+                  ></i>
+                  <i
+                    data-lucide="star"
+                    style="
+                      width: 14px;
+                      height: 14px;
+                      fill: #fbbf24;
+                      stroke: #fbbf24;
+                    "
+                  ></i>
+                  <i
+                    data-lucide="star"
+                    style="
+                      width: 14px;
+                      height: 14px;
+                      fill: #fbbf24;
+                      stroke: #fbbf24;
+                    "
+                  ></i>
+                  <i
+                    data-lucide="star"
+                    style="
+                      width: 14px;
+                      height: 14px;
+                      fill: #fbbf24;
+                      stroke: #fbbf24;
+                    "
+                  ></i>
+                </div>
+                <span class="rec-scope-pill">IT & Software Explainer</span>
+              </div>
+
+              <p class="rec-body-text">
+                "سعدت بالتعامل مع الأخ طارق كونه يجيد عمله ومتقن وكان متعاون
+                معنا إلى أبعد الحدود، كل الشكر له وبإذن الله نتعامل معه
+                باستمرار."
+              </p>
+            </div>
+
+            <div class="rec-author-row">
+              <div class="rec-avatar">H</div>
+              <div>
+                <div class="rec-author-name">Hussam E. (حسام ع.)</div>
+                <div class="rec-verified-badge">
+                  <i
+                    data-lucide="check-circle-2"
+                    style="width: 12px; height: 12px; color: #10b981"
+                  ></i>
+                  Verified Client &bull; Mostaql
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Review 3: Ayman S. -->
+          <div class="rec-card reveal-scale delay-3">
+            <div>
+              <div class="rec-card-header">
+                <div class="rec-stars-sm">
+                  <i
+                    data-lucide="star"
+                    style="
+                      width: 14px;
+                      height: 14px;
+                      fill: #fbbf24;
+                      stroke: #fbbf24;
+                    "
+                  ></i>
+                  <i
+                    data-lucide="star"
+                    style="
+                      width: 14px;
+                      height: 14px;
+                      fill: #fbbf24;
+                      stroke: #fbbf24;
+                    "
+                  ></i>
+                  <i
+                    data-lucide="star"
+                    style="
+                      width: 14px;
+                      height: 14px;
+                      fill: #fbbf24;
+                      stroke: #fbbf24;
+                    "
+                  ></i>
+                  <i
+                    data-lucide="star"
+                    style="
+                      width: 14px;
+                      height: 14px;
+                      fill: #fbbf24;
+                      stroke: #fbbf24;
+                    "
+                  ></i>
+                  <i
+                    data-lucide="star"
+                    style="
+                      width: 14px;
+                      height: 14px;
+                      fill: #fbbf24;
+                      stroke: #fbbf24;
+                    "
+                  ></i>
+                </div>
+                <span class="rec-scope-pill">App Promo Video</span>
+              </div>
+
+              <p class="rec-body-text">
+                "متميز وسريع بالعمل، لن يكون آخر تعامل بيننا، شكراً مهندس طارق."
+              </p>
+            </div>
+
+            <div class="rec-author-row">
+              <div class="rec-avatar">A</div>
+              <div>
+                <div class="rec-author-name">Ayman S. (أيمن س.)</div>
+                <div class="rec-verified-badge">
+                  <i
+                    data-lucide="check-circle-2"
+                    style="width: 12px; height: 12px; color: #10b981"
+                  ></i>
+                  Verified Client &bull; Mostaql
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Review 4: Saeed Mohamed A. -->
+          <div class="rec-card reveal-scale delay-4">
+            <div>
+              <div class="rec-card-header">
+                <div class="rec-stars-sm">
+                  <i
+                    data-lucide="star"
+                    style="
+                      width: 14px;
+                      height: 14px;
+                      fill: #fbbf24;
+                      stroke: #fbbf24;
+                    "
+                  ></i>
+                  <i
+                    data-lucide="star"
+                    style="
+                      width: 14px;
+                      height: 14px;
+                      fill: #fbbf24;
+                      stroke: #fbbf24;
+                    "
+                  ></i>
+                  <i
+                    data-lucide="star"
+                    style="
+                      width: 14px;
+                      height: 14px;
+                      fill: #fbbf24;
+                      stroke: #fbbf24;
+                    "
+                  ></i>
+                  <i
+                    data-lucide="star"
+                    style="
+                      width: 14px;
+                      height: 14px;
+                      fill: #fbbf24;
+                      stroke: #fbbf24;
+                    "
+                  ></i>
+                  <i
+                    data-lucide="star"
+                    style="
+                      width: 14px;
+                      height: 14px;
+                      fill: #fbbf24;
+                      stroke: #fbbf24;
+                    "
+                  ></i>
+                </div>
+                <span class="rec-scope-pill">Motion Graphics Ad</span>
+              </div>
+
+              <p class="rec-body-text">
+                "الأستاذ طارق رجل مهني ومحترف وبالتأكيد سأتعامل معه مرة أخرى."
+              </p>
+            </div>
+
+            <div class="rec-author-row">
+              <div class="rec-avatar">S</div>
+              <div>
+                <div class="rec-author-name">Saeed Mohamed (سعيد محمد آ.)</div>
+                <div class="rec-verified-badge">
+                  <i
+                    data-lucide="check-circle-2"
+                    style="width: 12px; height: 12px; color: #10b981"
+                  ></i>
+                  Verified Client &bull; Mostaql
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Review 5: Sohaib S. -->
+          <div class="rec-card reveal-scale delay-5">
+            <div>
+              <div class="rec-card-header">
+                <div class="rec-stars-sm">
+                  <i
+                    data-lucide="star"
+                    style="
+                      width: 14px;
+                      height: 14px;
+                      fill: #fbbf24;
+                      stroke: #fbbf24;
+                    "
+                  ></i>
+                  <i
+                    data-lucide="star"
+                    style="
+                      width: 14px;
+                      height: 14px;
+                      fill: #fbbf24;
+                      stroke: #fbbf24;
+                    "
+                  ></i>
+                  <i
+                    data-lucide="star"
+                    style="
+                      width: 14px;
+                      height: 14px;
+                      fill: #fbbf24;
+                      stroke: #fbbf24;
+                    "
+                  ></i>
+                  <i
+                    data-lucide="star"
+                    style="
+                      width: 14px;
+                      height: 14px;
+                      fill: #fbbf24;
+                      stroke: #fbbf24;
+                    "
+                  ></i>
+                  <i
+                    data-lucide="star"
+                    style="
+                      width: 14px;
+                      height: 14px;
+                      fill: #fbbf24;
+                      stroke: #fbbf24;
+                    "
+                  ></i>
+                </div>
+                <span class="rec-scope-pill">Video Production</span>
+              </div>
+
+              <p class="rec-body-text">
+                "الأخ طارق شخص محترم جداً ومرن في التعامل ومبدع في مجاله، أنصح
+                الأخوة بالتعامل معه."
+              </p>
+            </div>
+
+            <div class="rec-author-row">
+              <div class="rec-avatar">S</div>
+              <div>
+                <div class="rec-author-name">Sohaib S. (صهيب س.)</div>
+                <div class="rec-verified-badge">
+                  <i
+                    data-lucide="check-circle-2"
+                    style="width: 12px; height: 12px; color: #10b981"
+                  ></i>
+                  Verified Client &bull; Mostaql
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Review 6: Mustafa A. -->
+          <div class="rec-card reveal-scale delay-6">
+            <div>
+              <div class="rec-card-header">
+                <div class="rec-stars-sm">
+                  <i
+                    data-lucide="star"
+                    style="
+                      width: 14px;
+                      height: 14px;
+                      fill: #fbbf24;
+                      stroke: #fbbf24;
+                    "
+                  ></i>
+                  <i
+                    data-lucide="star"
+                    style="
+                      width: 14px;
+                      height: 14px;
+                      fill: #fbbf24;
+                      stroke: #fbbf24;
+                    "
+                  ></i>
+                  <i
+                    data-lucide="star"
+                    style="
+                      width: 14px;
+                      height: 14px;
+                      fill: #fbbf24;
+                      stroke: #fbbf24;
+                    "
+                  ></i>
+                  <i
+                    data-lucide="star"
+                    style="
+                      width: 14px;
+                      height: 14px;
+                      fill: #fbbf24;
+                      stroke: #fbbf24;
+                    "
+                  ></i>
+                  <i
+                    data-lucide="star"
+                    style="
+                      width: 14px;
+                      height: 14px;
+                      fill: #fbbf24;
+                      stroke: #fbbf24;
+                    "
+                  ></i>
+                </div>
+                <span class="rec-scope-pill">Video Ad Campaign</span>
+              </div>
+
+              <p class="rec-body-text">"ممتاز جداً وسرعة في التنفيذ."</p>
+            </div>
+
+            <div class="rec-author-row">
+              <div class="rec-avatar">M</div>
+              <div>
+                <div class="rec-author-name">Mustafa A. (مصطفى أ.)</div>
+                <div class="rec-verified-badge">
+                  <i
+                    data-lucide="check-circle-2"
+                    style="width: 12px; height: 12px; color: #10b981"
+                  ></i>
+                  Verified Client &bull; Mostaql
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+      <div class="container">
+        <div class="section-badge reveal">
+          <i data-lucide="mail" style="width: 14px; height: 14px"></i>
+          <span data-i18n="contact_badge">Get In Touch</span>
+        </div>
+        <h2 class="section-title reveal delay-1" data-i18n="contact_title">
+          Let's Build Something Great Together
+        </h2>
+        <p class="section-subtitle reveal delay-2" data-i18n="contact_subtitle">
+          Have a commercial project, broadcast packaging assignment, or creative
+          direction inquiry? Send a message directly.
+        </p>
+
+        <div class="contact-grid">
+          <!-- Contact Left Column -->
+          <div class="contact-left reveal-left delay-1">
+            <div>
+              <h3
+                style="font-size: 22px; font-weight: 700; margin-bottom: 12px"
+                data-i18n="cinfo_title"
+              >
+                Contact Information
+              </h3>
+              <p
+                style="
+                  color: var(--text-muted);
+                  font-size: 15px;
+                  line-height: 1.6;
+                "
+                data-i18n="cinfo_desc"
+              >
+                Open to commercial advertising, broadcast contracts, motion
+                graphics, and creative direction across Egypt and remote
+                worldwide.
+              </p>
+
+              <div class="contact-info-list">
+                <a
+                  href="mailto:tarek.mohamed272.tm@gmail.com"
+                  class="contact-item"
+                >
+                  <div class="contact-icon">
+                    <i data-lucide="mail" style="width: 18px; height: 18px"></i>
+                  </div>
+                  <div>
+                    <div
+                      style="
+                        font-size: 12px;
+                        color: var(--text-dim);
+                        text-transform: uppercase;
+                      "
+                      data-i18n="cinfo_email_lbl"
+                    >
+                      Email
+                    </div>
+                    <div>tarek.mohamed272.tm@gmail.com</div>
+                  </div>
+                </a>
+
+                <a href="tel:01070022976" class="contact-item">
+                  <div class="contact-icon">
+                    <i
+                      data-lucide="phone"
+                      style="width: 18px; height: 18px"
+                    ></i>
+                  </div>
+                  <div>
+                    <div
+                      style="
+                        font-size: 12px;
+                        color: var(--text-dim);
+                        text-transform: uppercase;
+                      "
+                      data-i18n="cinfo_phone_lbl"
+                    >
+                      Phone
+                    </div>
+                    <div>01070022976</div>
+                  </div>
+                </a>
+
+                <a
+                  href="https://wa.me/message/4QAUA7J5QBQII1"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="contact-item"
+                >
+                  <div class="contact-icon" style="color: #25d366">
+                    <i
+                      data-lucide="message-circle"
+                      style="width: 18px; height: 18px"
+                    ></i>
+                  </div>
+                  <div>
+                    <div
+                      style="
+                        font-size: 12px;
+                        color: var(--text-dim);
+                        text-transform: uppercase;
+                      "
+                      data-i18n="cinfo_wa_lbl"
+                    >
+                      WhatsApp
+                    </div>
+                    <div data-i18n="cinfo_wa_val">Direct Message</div>
+                  </div>
+                </a>
+
+                <div class="contact-item">
+                  <div class="contact-icon">
+                    <i
+                      data-lucide="map-pin"
+                      style="width: 18px; height: 18px"
+                    ></i>
+                  </div>
+                  <div>
+                    <div
+                      style="
+                        font-size: 12px;
+                        color: var(--text-dim);
+                        text-transform: uppercase;
+                      "
+                      data-i18n="cinfo_loc_lbl"
+                    >
+                      Location
+                    </div>
+                    <div data-i18n="cinfo_loc_val">Cairo, Egypt</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="social-row">
+              <a
+                href="https://www.linkedin.com/in/tarek-mohamed-91b111102/"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="soc-btn"
+              >
+                <i data-lucide="linkedin" style="width: 15px; height: 15px"></i>
+                LinkedIn
+              </a>
+              <a
+                href="https://mostaql.com/u/Tarek_El_Masry/portfolio"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="soc-btn"
+              >
+                <i
+                  data-lucide="briefcase"
+                  style="width: 15px; height: 15px"
+                ></i>
+                Mostaql
+              </a>
+              <a
+                href="https://www.facebook.com/tarek.mohamed.229574"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="soc-btn"
+              >
+                <i data-lucide="facebook" style="width: 15px; height: 15px"></i>
+                Facebook
+              </a>
+            </div>
+          </div>
+
+          <!-- Contact Form Column -->
+          <div class="contact-form-wrap reveal-right delay-2">
+            <form id="contact-form">
+              <div class="form-row">
+                <div class="form-group">
+                  <label
+                    class="form-label"
+                    for="form-name"
+                    data-i18n="form_name_lbl"
+                    >Name</label
+                  >
+                  <input
+                    type="text"
+                    id="form-name"
+                    name="Name"
+                    class="form-input"
+                    placeholder="Your name"
+                    data-i18n-ph="form_name_ph"
+                    required
+                  />
+                </div>
+
+                <div class="form-group">
+                  <label
+                    class="form-label"
+                    for="form-email"
+                    data-i18n="form_email_lbl"
+                    >Email</label
+                  >
+                  <input
+                    type="email"
+                    id="form-email"
+                    name="Email"
+                    class="form-input"
+                    placeholder="your@email.com"
+                    data-i18n-ph="form_email_ph"
+                    required
+                  />
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label
+                  class="form-label"
+                  for="form-subject"
+                  data-i18n="form_subj_lbl"
+                  >Subject</label
+                >
+                <input
+                  type="text"
+                  id="form-subject"
+                  name="Subject"
+                  class="form-input"
+                  placeholder="What's this about?"
+                  data-i18n-ph="form_subj_ph"
+                  required
+                />
+              </div>
+
+              <div class="form-group">
+                <label
+                  class="form-label"
+                  for="form-body"
+                  data-i18n="form_body_lbl"
+                  >Message</label
+                >
+                <textarea
+                  id="form-body"
+                  name="Body"
+                  class="form-textarea"
+                  placeholder="Tell me about your project, timeline, or opportunity..."
+                  data-i18n-ph="form_body_ph"
+                  required
+                ></textarea>
+              </div>
+
+              <!-- Optional File Upload Attachment -->
+              <div class="file-input-wrapper">
+                <label for="contact-file" class="file-label-btn">
+                  <i
+                    data-lucide="paperclip"
+                    style="width: 15px; height: 15px"
+                  ></i>
+                  <span data-i18n="form_file_lbl"
+                    >Attach Brief / File (Optional)</span
+                  >
+                </label>
+                <input
+                  type="file"
+                  id="contact-file"
+                  name="attachment"
+                  style="display: none"
+                />
+                <span id="file-preview" class="file-name-preview"></span>
+              </div>
+
+              <button
+                type="submit"
+                id="submit-btn"
+                class="btn btn-accent"
+                style="width: 100%; padding: 14px"
+              >
+                <i data-lucide="send" style="width: 16px; height: 16px"></i>
+                <span data-i18n="form_btn">Send Message</span>
+              </button>
+
+              <!-- Alert Toast Message -->
+              <div id="contact-toast" class="alert-toast"></div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <div class="container footer-content">
+        <div class="footer-text" data-i18n="footer_copy">
+          &copy; 2026 Tarek Mohamed &bull; Senior Motion Graphic Designer & Lead
+          Video Editor.
+        </div>
+        <div class="footer-links">
+          <a
+            href="https://www.linkedin.com/in/tarek-mohamed-91b111102/"
+            target="_blank"
+            rel="noopener noreferrer"
+            >LinkedIn</a
+          >
+          <a
+            href="https://mostaql.com/u/Tarek_El_Masry/portfolio"
+            target="_blank"
+            rel="noopener noreferrer"
+            >Mostaql</a
+          >
+          <a
+            href="https://wa.me/message/4QAUA7J5QBQII1"
+            target="_blank"
+            rel="noopener noreferrer"
+            >WhatsApp</a
+          >
+          <a
+            href="https://www.facebook.com/tarek.mohamed.229574"
+            target="_blank"
+            rel="noopener noreferrer"
+            >Facebook</a
+          >
+        </div>
+      </div>
+    </footer>
+
+    <!-- Floating WhatsApp Quick Action -->
+    <a
+      href="https://wa.me/message/4QAUA7J5QBQII1"
+      target="_blank"
+      rel="noopener noreferrer"
+      class="whatsapp-float"
+      id="whatsapp-float"
+      aria-label="Chat with Tarek on WhatsApp"
+    >
+      <div class="whatsapp-pulse"></div>
+      <div class="whatsapp-icon-box">
+        <i data-lucide="message-circle" style="width: 24px; height: 24px"></i>
+        <span class="whatsapp-online-dot"></span>
+      </div>
+      <div class="whatsapp-label">
+        <span class="whatsapp-hint" data-i18n="wa_hint"
+          >Online &bull; Quick Response</span
+        >
+        <span class="whatsapp-title" data-i18n="wa_title"
+          >Chat on WhatsApp</span
+        >
+      </div>
+    </a>
+
+    <!-- Scroll to Top Button -->
+    <button
+      id="scroll-top"
+      class="scroll-top"
+      title="Scroll to top"
+      aria-label="Scroll to top"
+    >
+      <i data-lucide="arrow-up" style="width: 20px; height: 20px"></i>
+    </button>
+
+    <!-- Main JavaScript -->
+    <script src="/js/main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,780 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tarek Mohamed — Curriculum Vitae (CV)</title>
+    <meta
+      name="description"
+      content="Official CV of Tarek Mohamed — Senior Motion Graphic Designer & Lead Video Editor."
+    />
+
+    <!-- Fonts: Cairo & Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700;800;900&family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+
+    <style>
+      :root {
+        --primary: #0f172a;
+        --accent: #0284c7;
+        --accent-warm: #d97706;
+        --text: #1e293b;
+        --text-muted: #475569;
+        --text-dim: #64748b;
+        --bg: #f8fafc;
+        --card-bg: #ffffff;
+        --border: #e2e8f0;
+        --radius: 12px;
+      }
+
+      * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+
+      body {
+        font-family:
+          "Inter",
+          -apple-system,
+          BlinkMacSystemFont,
+          sans-serif;
+        background-color: #0b1120;
+        color: var(--text);
+        line-height: 1.6;
+        padding: 40px 20px;
+      }
+
+      /* Top Floating Action Bar (Hidden in Print) */
+      .cv-topbar {
+        max-width: 960px;
+        margin: 0 auto 24px auto;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        gap: 12px;
+      }
+
+      .topbar-btn {
+        display: inline-flex;
+        align-items: center;
+        gap: 8px;
+        padding: 10px 18px;
+        border-radius: 8px;
+        font-size: 14px;
+        font-weight: 600;
+        text-decoration: none;
+        cursor: pointer;
+        transition: all 0.2s ease;
+        border: none;
+      }
+
+      .btn-back {
+        background: rgba(255, 255, 255, 0.1);
+        color: #ffffff;
+        border: 1px solid rgba(255, 255, 255, 0.15);
+      }
+
+      .btn-back:hover {
+        background: rgba(255, 255, 255, 0.2);
+      }
+
+      .btn-print {
+        background: #00e5ff;
+        color: #090d16;
+        box-shadow: 0 4px 15px rgba(0, 229, 255, 0.3);
+      }
+
+      .btn-print:hover {
+        background: #38bdf8;
+        transform: translateY(-2px);
+      }
+
+      /* Main CV Sheet */
+      .cv-sheet {
+        max-width: 960px;
+        margin: 0 auto;
+        background: #ffffff;
+        border-radius: 16px;
+        box-shadow: 0 20px 50px rgba(0, 0, 0, 0.4);
+        padding: 50px;
+        color: #1e293b;
+      }
+
+      /* CV Header */
+      .cv-header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 32px;
+        border-bottom: 2px solid #e2e8f0;
+        padding-bottom: 32px;
+        margin-bottom: 32px;
+      }
+
+      .cv-header-left {
+        flex: 1;
+      }
+
+      .cv-name {
+        font-size: 34px;
+        font-weight: 900;
+        color: #0f172a;
+        letter-spacing: -0.02em;
+        line-height: 1.15;
+        text-transform: uppercase;
+      }
+
+      .cv-title {
+        font-size: 17px;
+        font-weight: 700;
+        color: #0284c7;
+        text-transform: uppercase;
+        letter-spacing: 0.05em;
+        margin: 6px 0 10px 0;
+      }
+
+      .cv-affiliations {
+        display: inline-flex;
+        align-items: center;
+        gap: 10px;
+        background: #f1f5f9;
+        padding: 6px 14px;
+        border-radius: 6px;
+        font-size: 13px;
+        font-weight: 600;
+        color: #334155;
+      }
+
+      .cv-photo {
+        width: 120px;
+        height: 150px;
+        border-radius: 12px;
+        object-fit: cover;
+        object-position: center 20%;
+        border: 3px solid #e2e8f0;
+        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+        flex-shrink: 0;
+      }
+
+      /* Contact Strip */
+      .cv-contact-strip {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 12px 20px;
+        background: #f8fafc;
+        border: 1px solid #e2e8f0;
+        border-radius: 10px;
+        padding: 16px 20px;
+        margin-bottom: 32px;
+        font-size: 13px;
+      }
+
+      .contact-entry {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        color: #334155;
+        text-decoration: none;
+        word-break: break-word;
+      }
+
+      .contact-entry:hover {
+        color: #0284c7;
+      }
+
+      .contact-entry strong {
+        color: #0f172a;
+        font-weight: 700;
+        font-size: 11px;
+        text-transform: uppercase;
+        letter-spacing: 0.05em;
+      }
+
+      /* 2-Column Body Layout */
+      .cv-body {
+        display: grid;
+        grid-template-columns: 1.6fr 1fr;
+        gap: 40px;
+      }
+
+      /* Section Styles */
+      .cv-section {
+        margin-bottom: 28px;
+      }
+
+      .cv-sec-title {
+        font-size: 15px;
+        font-weight: 800;
+        color: #0f172a;
+        text-transform: uppercase;
+        letter-spacing: 0.08em;
+        border-bottom: 2px solid #0284c7;
+        padding-bottom: 6px;
+        margin-bottom: 16px;
+        display: flex;
+        align-items: center;
+        gap: 8px;
+      }
+
+      .cv-profile-text {
+        font-size: 14px;
+        color: #334155;
+        line-height: 1.75;
+        text-align: justify;
+      }
+
+      /* Experience Items */
+      .exp-item {
+        margin-bottom: 22px;
+      }
+
+      .exp-item-title {
+        font-size: 16px;
+        font-weight: 800;
+        color: #0f172a;
+      }
+
+      .exp-item-company {
+        font-size: 13.5px;
+        font-weight: 700;
+        color: #0284c7;
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 8px;
+      }
+
+      .exp-item-period {
+        font-size: 12px;
+        color: #64748b;
+        font-weight: 600;
+      }
+
+      .exp-bullets {
+        list-style-type: none;
+        padding-left: 0;
+      }
+
+      .exp-bullets li {
+        position: relative;
+        padding-left: 18px;
+        font-size: 13px;
+        color: #475569;
+        line-height: 1.6;
+        margin-bottom: 6px;
+      }
+
+      .exp-bullets li::before {
+        content: "▪";
+        position: absolute;
+        left: 0;
+        color: #0284c7;
+        font-size: 14px;
+      }
+
+      /* Skill Lists & Tags */
+      .skill-block {
+        margin-bottom: 16px;
+      }
+
+      .skill-block-title {
+        font-size: 13px;
+        font-weight: 700;
+        color: #0f172a;
+        margin-bottom: 6px;
+      }
+
+      .skill-pill {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        background: #f8fafc;
+        border: 1px solid #e2e8f0;
+        padding: 6px 12px;
+        border-radius: 6px;
+        font-size: 12.5px;
+        font-weight: 600;
+        margin-bottom: 6px;
+      }
+
+      .skill-level {
+        font-size: 11px;
+        color: #0284c7;
+        font-weight: 700;
+        text-transform: uppercase;
+      }
+
+      /* Structure Cards */
+      .structure-card {
+        background: #f8fafc;
+        border-left: 3px solid #0284c7;
+        padding: 10px 14px;
+        border-radius: 0 8px 8px 0;
+        margin-bottom: 10px;
+      }
+
+      .structure-num {
+        font-size: 12px;
+        font-weight: 800;
+        color: #0284c7;
+      }
+
+      .structure-name {
+        font-size: 13px;
+        font-weight: 700;
+        color: #0f172a;
+      }
+
+      .structure-desc {
+        font-size: 12px;
+        color: #64748b;
+        margin-top: 2px;
+      }
+
+      /* Highlights Banner */
+      .highlights-row {
+        display: flex;
+        gap: 12px;
+        margin-top: 14px;
+      }
+
+      .highlight-box {
+        flex: 1;
+        background: #f1f5f9;
+        border: 1px solid #e2e8f0;
+        border-radius: 8px;
+        padding: 10px;
+        text-align: center;
+      }
+
+      .hl-num {
+        font-size: 18px;
+        font-weight: 800;
+        color: #0f172a;
+      }
+
+      .hl-label {
+        font-size: 11px;
+        color: #64748b;
+        font-weight: 600;
+        text-transform: uppercase;
+      }
+
+      /* Print Specific Formatting */
+      @media print {
+        body {
+          background: #ffffff !important;
+          padding: 0 !important;
+          color: #000000 !important;
+        }
+
+        .cv-topbar {
+          display: none !important;
+        }
+
+        .cv-sheet {
+          box-shadow: none !important;
+          padding: 20px !important;
+          max-width: 100% !important;
+          border-radius: 0 !important;
+        }
+
+        .cv-sec-title {
+          border-color: #000000 !important;
+          color: #000000 !important;
+        }
+
+        .exp-item-company,
+        .skill-level,
+        .structure-num {
+          color: #000000 !important;
+        }
+
+        .contact-entry,
+        .exp-bullets li,
+        .cv-profile-text {
+          color: #111111 !important;
+        }
+      }
+
+      @media (max-width: 768px) {
+        .cv-sheet {
+          padding: 24px;
+        }
+
+        .cv-header {
+          flex-direction: column-reverse;
+          align-items: flex-start;
+        }
+
+        .cv-contact-strip {
+          grid-template-columns: 1fr;
+        }
+
+        .cv-body {
+          grid-template-columns: 1fr;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Floating Actions Bar (Hidden on print) -->
+    <div class="cv-topbar">
+      <a href="/" class="topbar-btn btn-back">
+        <i data-lucide="arrow-left" style="width: 16px; height: 16px"></i>
+        Back to Portfolio
+      </a>
+
+      <div style="display: flex; gap: 10px">
+        <a
+          href="https://wa.me/message/4QAUA7J5QBQII1"
+          target="_blank"
+          class="topbar-btn btn-back"
+          style="background: #25d366; color: #fff; border: none"
+        >
+          <i data-lucide="message-circle" style="width: 16px; height: 16px"></i>
+          WhatsApp
+        </a>
+
+        <button onclick="window.print()" class="topbar-btn btn-print">
+          <i data-lucide="printer" style="width: 16px; height: 16px"></i>
+          Print / Save as PDF
+        </button>
+      </div>
+    </div>
+
+    <!-- Main CV Printable Sheet -->
+    <main class="cv-sheet">
+      <!-- Header -->
+      <header class="cv-header">
+        <div class="cv-header-left">
+          <h1 class="cv-name">Tarek Mohamed</h1>
+          <div class="cv-title">
+            Senior Motion Graphic Designer &bull; Lead Video Editor
+          </div>
+          <div class="cv-affiliations">
+            <span>Founder at <strong>Thaqib Production</strong></span>
+            <span>&bull;</span>
+            <span><strong>MBC Group & Al Arabiya</strong></span>
+          </div>
+        </div>
+        <img src="/assets/TAREK.png" alt="Tarek Mohamed" class="cv-photo" />
+      </header>
+
+      <!-- Contact Strip -->
+      <section class="cv-contact-strip">
+        <a href="mailto:tarek.mohamed272.tm@gmail.com" class="contact-entry">
+          <i
+            data-lucide="mail"
+            style="width: 15px; height: 15px; color: #0284c7"
+          ></i>
+          <span><strong>Email:</strong> tarek.mohamed272.tm@gmail.com</span>
+        </a>
+
+        <a href="tel:01070022976" class="contact-entry">
+          <i
+            data-lucide="phone"
+            style="width: 15px; height: 15px; color: #0284c7"
+          ></i>
+          <span><strong>Phone:</strong> 01070022976</span>
+        </a>
+
+        <a
+          href="https://wa.me/message/4QAUA7J5QBQII1"
+          target="_blank"
+          class="contact-entry"
+        >
+          <i
+            data-lucide="message-circle"
+            style="width: 15px; height: 15px; color: #25d366"
+          ></i>
+          <span><strong>WhatsApp:</strong> Direct Chat</span>
+        </a>
+
+        <a
+          href="https://www.linkedin.com/in/tarek-mohamed-91b111102/"
+          target="_blank"
+          class="contact-entry"
+        >
+          <i
+            data-lucide="linkedin"
+            style="width: 15px; height: 15px; color: #0284c7"
+          ></i>
+          <span><strong>LinkedIn:</strong> tarek-mohamed</span>
+        </a>
+
+        <a
+          href="https://mostaql.com/u/Tarek_El_Masry/portfolio"
+          target="_blank"
+          class="contact-entry"
+        >
+          <i
+            data-lucide="briefcase"
+            style="width: 15px; height: 15px; color: #0284c7"
+          ></i>
+          <span><strong>Portfolio:</strong> Mostaql Profile</span>
+        </a>
+
+        <a
+          href="https://www.facebook.com/tarek.mohamed.229574"
+          target="_blank"
+          class="contact-entry"
+        >
+          <i
+            data-lucide="facebook"
+            style="width: 15px; height: 15px; color: #0284c7"
+          ></i>
+          <span><strong>Facebook:</strong> tarek.mohamed</span>
+        </a>
+      </section>
+
+      <!-- CV Body (2 Columns) -->
+      <div class="cv-body">
+        <!-- Left Major Column: Experience & Profile -->
+        <div class="cv-main-col">
+          <!-- Profile -->
+          <section class="cv-section">
+            <h2 class="cv-sec-title">
+              <i data-lucide="user" style="width: 16px; height: 16px"></i>
+              Executive Profile
+            </h2>
+            <p class="cv-profile-text">
+              Founder of Thaqib for Media Production, Senior Motion Graphic
+              Designer, and Video Editor with over 7 years of industry
+              experience across broadcast media and commercial advertising.
+              Currently editing and designing visual assets for MBC Group and Al
+              Arabiya News Channel. Combining dynamic broadcast storytelling
+              with advanced motion graphics and creative leadership, I deliver
+              high-impact visual experiences and scalable advertising solutions
+              for global networks and top-tier brands.
+            </p>
+
+            <div class="highlights-row">
+              <div class="highlight-box">
+                <div class="hl-num">+7 Yrs</div>
+                <div class="hl-label">Industry Exp.</div>
+              </div>
+              <div class="highlight-box">
+                <div class="hl-num">MBC & Al Arabiya</div>
+                <div class="hl-label">Broadcast Networks</div>
+              </div>
+              <div class="highlight-box">
+                <div class="hl-num">Thaqib</div>
+                <div class="hl-label">Agency Brand</div>
+              </div>
+            </div>
+          </section>
+
+          <!-- Professional Experience -->
+          <section class="cv-section">
+            <h2 class="cv-sec-title">
+              <i data-lucide="briefcase" style="width: 16px; height: 16px"></i>
+              Professional Experience
+            </h2>
+
+            <!-- Role 1: Thaqib -->
+            <div class="exp-item">
+              <div class="exp-item-title">Founder & Managing Director</div>
+              <div class="exp-item-company">
+                <span>THAQIB FOR Media PRODUCTION</span>
+                <span class="exp-item-period">2026 – Present</span>
+              </div>
+              <ul class="exp-bullets">
+                <li>
+                  Lead full-scale production workflows and creative direction
+                  for commercial campaigns and digital media assets.
+                </li>
+                <li>
+                  Oversee visual identity creation, promotional 2D motion
+                  graphics, and high-conversion commercial production for
+                  diverse clients.
+                </li>
+                <li>
+                  Manage client relationships, strategic campaign planning, and
+                  project delivery.
+                </li>
+              </ul>
+            </div>
+
+            <!-- Role 2: Al Arabiya & MBC -->
+            <div class="exp-item">
+              <div class="exp-item-title">
+                Senior Motion Graphic Designer & Broadcast Video Editor
+              </div>
+              <div class="exp-item-company">
+                <span>AL ARABIYA NEWS CHANNEL & MBC GROUP</span>
+                <span class="exp-item-period">2021 – Present</span>
+              </div>
+              <ul class="exp-bullets">
+                <li>
+                  Edit high-stakes television reports, specialized programs, and
+                  breaking news packages under tight deadlines, adhering to
+                  international broadcast standards.
+                </li>
+                <li>
+                  Design and animate broadcast motion graphics packages, channel
+                  idents, and news infographics to simplify complex statistics
+                  and enhance visual storytelling.
+                </li>
+                <li>
+                  Ensure seamless editorial flow, dynamic pacing, and
+                  broadcast-quality audio mixing and color grading.
+                </li>
+              </ul>
+            </div>
+          </section>
+
+          <!-- Motion Design & Editing Expertise -->
+          <section class="cv-section">
+            <h2 class="cv-sec-title">
+              <i data-lucide="film" style="width: 16px; height: 16px"></i>
+              Core Disciplines
+            </h2>
+            <div
+              style="display: grid; grid-template-columns: 1fr 1fr; gap: 16px"
+            >
+              <div>
+                <div class="skill-block-title">Motion Design</div>
+                <ul class="exp-bullets">
+                  <li>Broadcast Packaging & Channel Idents</li>
+                  <li>News & Data Visualization Infographics</li>
+                  <li>Commercial & Promotional 2D Animation</li>
+                  <li>Kinetic Typography & Visual Pacing</li>
+                </ul>
+              </div>
+              <div>
+                <div class="skill-block-title">Editing & Production</div>
+                <ul class="exp-bullets">
+                  <li>Fast-Turnaround Newsroom Workflows</li>
+                  <li>Documentary & Program Storytelling</li>
+                  <li>Audio Cleaning, Mixing & Sound Design</li>
+                  <li>Color Grading & Video Post-Processing</li>
+                </ul>
+              </div>
+            </div>
+          </section>
+        </div>
+
+        <!-- Right Column: Tools, Leadership, Portfolio Structure -->
+        <div class="cv-side-col">
+          <!-- Software & Tools -->
+          <section class="cv-section">
+            <h2 class="cv-sec-title">
+              <i data-lucide="cpu" style="width: 16px; height: 16px"></i>
+              Software & Tools
+            </h2>
+            <div class="skill-pill">
+              <span>Adobe After Effects</span>
+              <span class="skill-level">Advanced / Senior</span>
+            </div>
+            <div class="skill-pill">
+              <span>Adobe Premiere Pro</span>
+              <span class="skill-level">Expert / Mastery</span>
+            </div>
+            <div class="skill-pill">
+              <span>Adobe Photoshop</span>
+              <span class="skill-level">Advanced</span>
+            </div>
+            <div class="skill-pill">
+              <span>Adobe Illustrator</span>
+              <span class="skill-level">Advanced</span>
+            </div>
+            <div class="skill-pill">
+              <span>DaVinci Resolve</span>
+              <span class="skill-level">Intermediate - Adv</span>
+            </div>
+          </section>
+
+          <!-- Technical Proficiencies -->
+          <section class="cv-section">
+            <h2 class="cv-sec-title">
+              <i
+                data-lucide="check-square"
+                style="width: 16px; height: 16px"
+              ></i>
+              Technical Proficiencies
+            </h2>
+            <ul class="exp-bullets">
+              <li>
+                <strong>After Effects:</strong> 2D Animation, Compositing,
+                Kinetic Typography.
+              </li>
+              <li>
+                <strong>Premiere Pro:</strong> Broadcast, fast-turnaround, and
+                commercial editing.
+              </li>
+              <li>
+                <strong>Photoshop & Illustrator:</strong> Vector asset
+                preparation, storyboarding, visual design.
+              </li>
+              <li>
+                <strong>DaVinci Resolve:</strong> Color correction & grading.
+              </li>
+            </ul>
+          </section>
+
+          <!-- Leadership -->
+          <section class="cv-section">
+            <h2 class="cv-sec-title">
+              <i data-lucide="shield" style="width: 16px; height: 16px"></i>
+              Leadership & Ops
+            </h2>
+            <ul class="exp-bullets">
+              <li>Creative Direction & Visual Supervision</li>
+              <li>Production Management & Agency Operations</li>
+              <li>Client Relations & Strategic Media Planning</li>
+            </ul>
+          </section>
+
+          <!-- Portfolio Structure -->
+          <section class="cv-section">
+            <h2 class="cv-sec-title">
+              <i
+                data-lucide="folder-check"
+                style="width: 16px; height: 16px"
+              ></i>
+              Portfolio Structure
+            </h2>
+            <div class="structure-card">
+              <div class="structure-num">01</div>
+              <div class="structure-name">Motion Graphics</div>
+              <div class="structure-desc">
+                Commercial explainers, dynamic 2D animations, broadcast
+                infographics.
+              </div>
+            </div>
+            <div class="structure-card">
+              <div class="structure-num">02</div>
+              <div class="structure-name">Broadcast & Television</div>
+              <div class="structure-desc">
+                News reports, documentary pieces, and programs edited for MBC
+                and Al Arabiya.
+              </div>
+            </div>
+            <div class="structure-card">
+              <div class="structure-num">03</div>
+              <div class="structure-name">Commercials & Brand Campaigns</div>
+              <div class="structure-desc">
+                Commercial ads and corporate videos produced by Thaqib.
+              </div>
+            </div>
+          </section>
+        </div>
+      </div>
+    </main>
+
+    <script>
+      if (window.lucide) {
+        window.lucide.createIcons();
+      }
+    </script>
+  </body>
+</html>
